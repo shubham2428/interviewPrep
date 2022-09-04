@@ -1,0 +1,151 @@
+﻿@model IEnumerable<BusinessObjects.EventsBO>
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventsCreatedById)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EventsCreatedById)
+            </td>
+        }
+    </tr>
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.EventsCreatedByName)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.EventsCreatedByName)
+            </td>
+        }
+    </tr>
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.NameOfTheEvent)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.NameOfTheEvent)
+            </td>
+        }
+    </tr>
+
+
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TitleOfTheBook)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TitleOfTheBook)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOfTheEvent)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfTheEvent)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeOfEvent)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeOfEvent)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StartTime)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.StartTime)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Duration)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Duration)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AddPeople)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.AddPeople)
+            </td>
+        }
+    </tr>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        @foreach (var item in Model)
+        {
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+        }
+    </tr>
+
+
+
+
+</table>
